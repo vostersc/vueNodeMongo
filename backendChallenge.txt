@@ -1,0 +1,32 @@
+/*
+Create below an express.js route that queries a Mongo database to get all the customer logs for a given locationId and date range and returns them grouped by customer.
+The relevant database tables have the following structures:
+locations {
+  locationId,
+  name,
+  createdDate
+}
+
+customers {
+  customerId,
+  locationId,
+  firstName,
+  lastName,
+  email,
+  phone,
+  createdDate
+}
+
+customerLogs {
+  customerId,
+  type,
+  text,
+  date
+}
+*/
+
+// Use db as the mongo connection object
+// Assume req.body contains a locationId, startDate and endDate.
+router.post('/opiniionTest', function(res, req) {
+  res.send('Finished!');
+});
