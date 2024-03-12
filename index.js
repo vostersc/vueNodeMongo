@@ -8,16 +8,6 @@ app.use(express.static('public'));
 app.use(express.json());
 app.use(dbConnect);
 
-// app.get('/api/v1/user/:userId', async (req, res) => {
-//     try {
-//         const collection = req.dbClient.db('database').collection('customers');
-//         const result = await collection.findOne({ name: "A" });
-//         res.json(result);
-//     } catch(err){
-//         console.log('index.js: 16 --->', err);
-//     }
-// });
-
 app.get('/', (r, res) => {
     res.sendFile(__dirname + '/index.html');
 });
