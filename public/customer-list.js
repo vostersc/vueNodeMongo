@@ -1,4 +1,3 @@
-// customer-list.js
 Vue.component('customer-list', {
     data() {
       return {
