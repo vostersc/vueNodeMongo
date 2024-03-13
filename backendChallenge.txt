@@ -1,5 +1,6 @@
 /*
-Create below an express.js route that queries a Mongo database to get all the customer logs for a given locationId and date range and returns them grouped by customer.
+Create below an express.js route that queries a Mongo database to get all the customer logs
+for a given locationId and date range and returns them grouped by customer.
 The relevant database tables have the following structures:
 locations {
   locationId,
