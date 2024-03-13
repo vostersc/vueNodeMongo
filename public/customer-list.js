@@ -56,7 +56,6 @@ Vue.component('customer-list', {
         // Assuming you have an endpoint to delete a customer
         axios.delete(`/customers/${customerId}`)
           .then(response => {
-            console.log('customer-list.js: 60 --->', response);
             if(response.error) throw new Error('deletion error');
 
             this.fetchCustomers();
